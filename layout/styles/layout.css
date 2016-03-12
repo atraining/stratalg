@@ -42,7 +42,11 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{padding:150px 0;}
 
-#pageintro .introtxt{display:block; float:right; max-width:50%;margin-left:15%;}
+#pageintro .introtxt{background-color:#ffffff;opacity:0.8;padding:2em;}
+
+.lightpic{background-color:#ffffff;opacity:0.8;padding:2em;}
+#pageintro .introtxt:hover{background-color:rgba(255,255,255,0.3);opacity:0.8;padding:2em;}
+#pageintro .introtxt{display:block; float:right; max-width:60%;margin-left:15%;}
 #pageintro .introtxt .heading{margin-bottom:30px;  font-size:42px;}
 #pageintro .introtxt p{margin-bottom:30px; font-size:16px;}
 
@@ -52,6 +56,7 @@ File: Layout CSS
 .fullpic{padding:150px 0;}
 
 .fullpic .introtxt{display:block; float:left; max-width:60%;}
+.fullpic .introtxt.longheader{display:block; float:left; max-width:80%;}
 .fullpic .introtxt .heading{margin-bottom:30px; font-size:42px;}
 .fullpic .introtxt p{margin-bottom:30px; font-size:16px;}
 
@@ -263,8 +268,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#56AED4; border-color:#56AED4;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn{color:#ffffff; background-color:#56AED4; border-color:#56AED4;}
+.btn.inverse:hover{color:#000000; background-color:#ffffff; border-color:#777777;}
+.btn:hover{color:inherit; background-color:transparent; border-color:inherit;}
+.btn.inverse{color:#000000; background-color:#ffffff; border-color:rgba(68,68,68,0.72);opacity:0.8;}
 
 .icon{color:inherit;}
 .icon::before, .icon::after{background-color:#468c00;}
@@ -272,7 +279,7 @@ article:hover .icon::before, article:hover .icon::after{}
 
 .underlined::before{background-color:#D7D7D7;}
 .underlined::after{color:#D7D7D7; background-color:#FFFFFF;}
-.bgded .underlined::after{background-color:#000000;}
+.bgded .underlined::after{background-color:#ffffff;}
 
 
 /* Rows */
@@ -400,7 +407,7 @@ table a, #comments a{background-color:inherit;}
 	.fullpic .introtxt .heading{font-size:36px;}
 	
 	
-	#footer{padding-bottom:50px;}
+	/*#footer{padding-bottom:50px;}*/
 }
 
 @media screen and (max-width:450px){}
